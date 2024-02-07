@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="Eidos.MainWindow"
+        Title="Eidos"
+        Width="800" Height="600"
+        WindowStartupLocation="CenterScreen">
+  
+
+  <Canvas x:Name="MainCanvas">
+        <Button x:Name="AddTaskTypeA" Margin="25, 415, 0, 0" Width="300" Height="40" Background="White" Foreground="Black" Click="ClickAddTaskTypeA">
+          Добавить задачу типа A
+          </Button>
+    
+        <Button x:Name="AddTaskTypeB" Margin="475, 415, 0, 0" Width="300" Height="40" Background="White" Foreground="Black" Click="ClickAddTaskTypeB">
+          Добавить задачу типа B
+          </Button>
+    
+        <Button x:Name="TypeA" Margin="331, 480, 0, 0" Width="115" Height="40" Background="White" Foreground="Black" Click="ShowOnlyTypeA">
+          Тип А
+          </Button>
+    
+        <Button x:Name="TypeB" Margin="331, 535, 0, 0" Width="115" Height="40" Background="White" Foreground="Black" Click="ShowOnlyTypeB">
+          Тип B
+          </Button>
+    
+        <Button x:Name="RemoveAll" Margin="460, 480, 0, 0" Width="315" Height="40" Background="White" Foreground="Black" Click="RemoveAllTasks">
+          Удалить все
+          </Button>
+    
+        <Button x:Name="StopAll" Margin="460, 535, 0, 0" Width="150" Height="40" Background="White" Foreground="Black" Click="StopAllTasks">
+          Остановить все
+          </Button>
+    
+        <Button x:Name="RunAll" Margin="625, 535, 0, 0" Width="150" Height="40" Background="White" Foreground="Black" Click="RunAllTasks">
+          Запустить все
+          </Button>
+    
+        <TextBox Name="Logs" Margin="25, 480, 0, 0" Width="300" Height="95">  
+        Logs:
+        </TextBox>  
+  </Canvas>
+</Window>
